@@ -4,6 +4,9 @@ class BootState {
     this.scale.pageAlignHorizontally = true;
     this.scale.pageAlignVertically = true;
   }
+  create() {
+    game.state.start("Load")
+  }
 }
 
 class LoadState {
@@ -11,7 +14,7 @@ class LoadState {
     console.log("Loading...");
   }
   create() {
-    console.log("Loaded")
+    console.log("Loaded");
   }
 }
 
