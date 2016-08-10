@@ -16,6 +16,7 @@ class LoadState {
   }
   create() {
     console.log("Loaded");
+    this.state.start("Play");
   }
 }
 
