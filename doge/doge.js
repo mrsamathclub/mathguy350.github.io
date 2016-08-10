@@ -10,7 +10,7 @@ class LoadState {
   preload() {
     console.log("Loading...");
   }
-  create {
+  create() {
     console.log("Loaded")
   }
 }
