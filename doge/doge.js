@@ -27,7 +27,7 @@ var C = {
     "frames": 2,
     "fps": 0,
     "startx": 160,
-    "starty": 32 
+    "starty": -32 
   } 
 }
 class BootState {
@@ -79,7 +79,8 @@ class PlayState {
     update() {
     this.dodge.y += 5;
     if (this.dodge.y > 500){
-      this.dodge.y = 32;
+      this.dodge.x = gRA(0, 320);
+      this.dodge.y = -32;
     }
     if (this.cursors.left.isDown) {
       this.player.x -= C.p.speed;
@@ -89,7 +90,9 @@ class PlayState {
     }
   }
 }
-
+function gRA(min,max) {
+  return Math.random() * (max - min) + min;
+}
 function restart() {
   game.state.start("Boot");
   return "Okay";
