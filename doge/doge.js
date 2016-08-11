@@ -27,6 +27,7 @@ var C = {
     "fps": 10,
     "startx": 160,
     "starty": 32 
+  } 
 }
 class BootState {
   preload() {
