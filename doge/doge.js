@@ -42,7 +42,7 @@ class PlayState {
 }
 
 function restart() {
-  game.state.start("Boot")
+  return game.state.start("Boot")
 }
 
 var game = new Phaser.Game(C.game.width,C.game.height);
