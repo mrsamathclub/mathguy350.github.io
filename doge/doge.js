@@ -77,12 +77,12 @@ class PlayState {
     this.cursors = this.input.keyboard.createCursorKeys();
   }
     update() {
+    this.dodge.y -= 10;
     if (this.cursors.left.isDown) {
       this.player.x -= C.p.speed;
     }
     if (this.cursors.right.isDown) {
       this.player.x += C.p.speed;
-    this.dodge.x -= 10;
     }
   }
 }
