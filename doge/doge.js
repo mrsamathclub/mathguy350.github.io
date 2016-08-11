@@ -1,4 +1,4 @@
-var C {
+var C = {
   "game": {
     "width": 320,
     "height": 568
