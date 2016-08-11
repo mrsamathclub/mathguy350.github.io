@@ -10,6 +10,12 @@ var C = {
     "yspeed": 700,
     "file": "assets/background.png"
   }
+  "p": {
+    "file": "assets/dodger.png",
+    "width": 46,
+    "height": 64,
+    "frames": 2
+  }
 }
 class BootState {
   preload() {
