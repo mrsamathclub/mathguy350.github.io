@@ -77,7 +77,7 @@ class PlayState {
     this.cursors = this.input.keyboard.createCursorKeys();
   }
     update() {
-    this.dodge.y -= 1;
+    this.dodge.y += 1;
     if (this.cursors.left.isDown) {
       this.player.x -= C.p.speed;
     }
