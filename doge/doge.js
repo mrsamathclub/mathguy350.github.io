@@ -40,6 +40,11 @@ class PlayState {
     this.bg.autoScroll(C.bg.xspeed,C.bg.yspeed);
   }
 }
+
+function restart() {
+  game.state.start("Boot")
+}
+
 var game = new Phaser.Game(C.game.width,C.game.height);
 game.state.add("Boot",BootState);
 game.state.add("Load", LoadState);
