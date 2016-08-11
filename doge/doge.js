@@ -19,6 +19,14 @@ var C = {
     "startx": 160,
     "starty": 500
   }
+  "d": {
+    "file": "assets/dodge1.png",
+    "width": 64,
+    "height": 64,
+    "frames": 2,
+    "fps": 10,
+    "startx": 160,
+    "starty": 32 
 }
 class BootState {
   preload() {
@@ -55,6 +63,13 @@ class PlayState {
     this.player.scale.set(1);
     this.player.animations.add("anim");
     this.player.animations.play("anim",C.p.fps,true);
+    
+    this.dodge = this.add.sprite(C.d.startx,C.d.starty,"dodge");
+    this.dodge.anchor.set(0.5,0.5);
+    this.dodge.smoothed = false;
+    this.dodge.scale.set(1);
+    this.dodge.animations.add("anim");
+    this.dodge.animations.play("anim",C.d.fps,true);
   }
 }
 
