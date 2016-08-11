@@ -18,7 +18,7 @@ var C = {
     "fps": 2,
     "startx": 160,
     "starty": 500,
-    "speed": 10
+    "speed": 12
   },
   "d": {
     "file": "assets/dodgeme1.png",
@@ -77,15 +77,15 @@ class PlayState {
     this.cursors = this.input.keyboard.createCursorKeys();
   }
     update() {
-    this.dodge.y += 5;
+    this.dodge.y += 8;
     if (this.dodge.y > 500){
       this.dodge.x = gRA(0, 320);
       this.dodge.y = -32;
     }
     if (this.cursors.left.isDown) {
       this.player.x -= C.p.speed;
-      if (this.player.x < 10){
-        this.player.x = 30;
+      if (this.player.x < 20){
+        this.player.x = 20;
       }
     }
     if (this.cursors.right.isDown) {
