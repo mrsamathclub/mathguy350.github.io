@@ -20,7 +20,7 @@ var C = {
     "starty": 500
   }
   "d": {
-    "file": "assets/dodge1.png",
+    "file": "assets/dodgeme1.png",
     "width": 64,
     "height": 64,
     "frames": 2,
