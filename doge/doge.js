@@ -72,6 +72,8 @@ class PlayState {
     this.dodge.scale.set(1);
     this.dodge.animations.add("anim");
     this.dodge.animations.play("anim",C.d.fps,true);
+    
+    this.cursors = this.input.keyboard.createCursorKeys();
   }
     update() {
     if (this.cursors.left.isDown) {
