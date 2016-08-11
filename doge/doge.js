@@ -84,9 +84,15 @@ class PlayState {
     }
     if (this.cursors.left.isDown) {
       this.player.x -= C.p.speed;
+      if (this.player.x < 10){
+        this.player.x = 30;
+      }
     }
     if (this.cursors.right.isDown) {
       this.player.x += C.p.speed;
+      if (this.player.x > 300){
+        this.player.x = 300;
+      }
     }
   }
 }
