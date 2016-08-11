@@ -82,6 +82,7 @@ class PlayState {
     }
     if (this.cursors.right.isDown) {
       this.player.x += C.p.speed;
+    this.dodge.x -= 10;
     }
   }
 }
