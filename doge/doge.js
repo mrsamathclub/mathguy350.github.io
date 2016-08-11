@@ -9,7 +9,7 @@ var C = {
     "xspeed": 0,
     "yspeed": 700,
     "file": "assets/background.png"
-  }
+  },
   "p": {
     "file": "assets/dodger.png",
     "width": 46,
